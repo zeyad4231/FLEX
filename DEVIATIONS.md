@@ -18,3 +18,7 @@
 - **Model strength matters for MASK (15 Nov).** KitchenWorld "All Three", seed 0. Both gpt-4o-mini and gpt-4o did ADD (+stove) and GENERALIZE (stove → heat source) correctly. gpt-4o-mini then masked "distance to heat source" (R̂ 0.95, goal-only, correct path only by luck of the layout); gpt-4o kept it (R̂ 1.00). The MASK prompt asks whether a feature "might lead the agent to treat multiple objects the same way" and never sees the GENERALIZE intent, so it pushes against generalized features; a weaker model follows that literally.
 - **Cost:** one full FLEX update ≈ 8 calls ≈ $0.024 on gpt-4o (≈ $0.0015 on gpt-4o-mini).
 18. **Model and decoding:** gpt-4o served as gpt-4o-2024-08-06 (from the API response); temperature 0 for all calls. The paper names "GPT-4o" but gives no snapshot or temperature.
+19. **RQ2 goal rule:** "distance to goal" is a task feature, not a user preference (Table 2 never edits it). In RQ2, if a method's update removes it, it is restored; same rule for all methods, logged as [RULE]. (Never triggered in RQ1.)
+
+## Observations (continued)
+- **RQ2 test (gpt-4o, seed 0):** MASK voted to remove *every* feature in stages 2, 3 and 4 (our "never empty the set" default kept the list) and removed "distance to goal" in stage 1. GENERALIZE over-generalized "fridge → appliance" (stage 1) and once turned "heat source" back into "stove" (stage 2). The paper does not specify behaviour when MASK empties the feature set.

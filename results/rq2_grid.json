@@ -1,0 +1,1560 @@
+[
+ {
+  "seed": 0,
+  "method": "FLEX",
+  "matrix": [
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.8526588718394271,
+    0.8801010800902147,
+    0.8801010800902147,
+    0.8974900435404223,
+    0.9269162079762386
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.9331453490774714,
+    0.9331453490774714,
+    0.8974900435404223,
+    0.9269162079762386
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to appliance"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "method": "ALGAE",
+  "matrix": [
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.44763813026703775,
+    1.0,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.8801010800902147,
+    0.9938155595855698,
+    0.8974900435404223,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.8801010800902147,
+    0.9938155595855698,
+    0.8974900435404223,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.8801010800902147,
+    0.9938155595855698,
+    0.8974900435404223,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.8801010800902147,
+    0.9938155595855698,
+    0.9344969450974289,
+    0.9269162079762386
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove",
+    "Distance to kettle"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "method": "MFE",
+  "matrix": [
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.35719189290221953,
+    0.996133957508535,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.9344969450974289,
+    0.9269162079762386
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'fridge'",
+    "Presence of 'light source' in Vicinity",
+    "Proximity to 'icy' Object"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'kettle'",
+    "Presence of 'kettle' in Line of Sight",
+    "Number of Steps to Reach 'kettle'",
+    "Relative Direction to 'kettle'"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "method": "USF",
+  "matrix": [
+   [
+    1.0,
+    0.44763813026703775,
+    0.44763813026703775,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.0,
+    0.5452323369092813,
+    0.996133957508535,
+    0.6703671451533099,
+    0.8968955588017765
+   ],
+   [
+    0.8526588718394271,
+    1.0,
+    1.0,
+    0.8974900435404223,
+    0.8968955588017765
+   ],
+   [
+    0.7064300885659349,
+    1.0,
+    0.9776952867324583,
+    0.9370111604742094,
+    0.8968955588017765
+   ],
+   [
+    0.8526588718394271,
+    0.9976479534168522,
+    0.996133957508535,
+    1.0,
+    1.0
+   ],
+   [
+    0.0,
+    0.8801010800902147,
+    0.8801010800902147,
+    0.9950943085717835,
+    0.9537018397610412
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from fridge to goal",
+    "Agent's starting position",
+    "Fridge's position"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal",
+    "Distance from fridge to stove"
+   ],
+   [
+    "Distance to Goal",
+    "Distance to Fridge",
+    "Distance to Stove",
+    "Manhattan Distance to Goal",
+    "Manhattan Distance to Fridge",
+    "Manhattan Distance to Stove"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to stove",
+    "Distance from agent to kettle",
+    "Average distance from agent to all heat sources",
+    "Distance from stove to goal",
+    "Distance from kettle to goal",
+    "Average distance from all objects"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to object1",
+    "Manhattan distance from agent to goal",
+    "Manhattan distance from agent to object1",
+    "Relative direction to goal",
+    "Relative direction to object1",
+    "Proximity to object1"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "method": "FLEX",
+  "matrix": [
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9543093930020407,
+    0.9670697657613042,
+    0.9684093598740394,
+    0.9684093598740393
+   ],
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to appliance"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "method": "ALGAE",
+  "matrix": [
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9543093930020407,
+    0.9670697657613042,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9973710484642104,
+    1.0,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9973710484642104,
+    1.0,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9973710484642104,
+    1.0,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.9699136815392156,
+    0.9973710484642104,
+    1.0,
+    0.9188517310493929,
+    0.9188517310493929
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "method": "MFE",
+  "matrix": [
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.8015390222662149,
+    0.9543093930020407,
+    0.9877085473090426,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    0.9852328054234253,
+    0.9852328054234253,
+    0.9684093598740394,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    0.9837039264617816,
+    1.0
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Fridge'",
+    "Presence of Light Source",
+    "Icy Terrain Proximity"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Stove'"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'kettle'",
+    "Distance to Nearest Object of Color 'orange'",
+    "Presence of Heat Source in Proximity"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "method": "USF",
+  "matrix": [
+   [
+    1.0,
+    0.9057984736708723,
+    0.9057984736708723,
+    0.9188517310493929,
+    0.9188517310493929
+   ],
+   [
+    0.8526588718394271,
+    0.9543093930020407,
+    0.9543093930020407,
+    0.9188517310493929,
+    0.9684093598740393
+   ],
+   [
+    0.8827451903002115,
+    1.0,
+    0.9543093930020407,
+    0.8926726791323939,
+    1.0
+   ],
+   [
+    0.8015390222662149,
+    0.9852328054234253,
+    0.990495338551678,
+    0.9684093598740394,
+    0.9188517310493929
+   ],
+   [
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   [
+    0.0,
+    0.9543093930020407,
+    0.9543093930020407,
+    0.9908002327969925,
+    1.0
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from fridge to goal",
+    "Proximity of agent to fridge",
+    "Proximity of agent to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal",
+    "Distance from fridge to stove"
+   ],
+   [
+    "Distance to Goal",
+    "Distance to Fridge",
+    "Distance to Stove",
+    "Average Distance to All Objects",
+    "Proximity to Fridge",
+    "Proximity to Stove"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to stove",
+    "Distance from agent to kettle",
+    "Average distance from agent to all heat sources",
+    "Distance from stove to goal",
+    "Distance from kettle to goal",
+    "Average distance from all objects"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to kettle",
+    "Proximity to kettle",
+    "Relative direction to goal",
+    "Relative direction to kettle"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "method": "FLEX",
+  "matrix": [
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9783005455266678,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9772658049352233
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9772658049352233
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9772658049352233
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to appliance"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "method": "ALGAE",
+  "matrix": [
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9810400006876212,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9810400006876212,
+    0.9810400006876212,
+    0.9810400006876212,
+    1.0
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "Distance to stove",
+    "Distance to kettle"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "method": "MFE",
+  "matrix": [
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9506418494174326,
+    0.9861852497320507,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9905706419070108,
+    1.0,
+    1.0,
+    0.9858593430295012
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Fridge'",
+    "Presence of Light Source",
+    "Icy Terrain Proximity"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Kettle'",
+    "Presence of Heat Source in Vicinity",
+    "Proximity to Appliance"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "method": "USF",
+  "matrix": [
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    1.0,
+    0.9029549303934182,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9953773907646818,
+    1.0,
+    1.0,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.9843020956576859,
+    0.9861852497320507,
+    1.0,
+    0.8954325730913345
+   ],
+   [
+    1.0,
+    0.982826031369884,
+    0.982826031369884,
+    0.9911305294145589,
+    0.9772658049352233
+   ],
+   [
+    1.0,
+    0.9029549303934182,
+    0.9029549303934182,
+    0.9922911011654664,
+    0.9956090108364
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from fridge to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal",
+    "Distance from fridge to stove"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to stove",
+    "Average distance from agent to all objects"
+   ],
+   [
+    "Distance to Goal",
+    "Distance to Stove",
+    "Distance to Kettle",
+    "Manhattan Distance to Goal",
+    "Manhattan Distance to Stove",
+    "Manhattan Distance to Kettle",
+    "Average Distance to Heat Sources",
+    "Proximity to Heat Sources"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to kettle",
+    "Proximity to kettle",
+    "Relative position of agent to goal",
+    "Relative position of agent to kettle"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "method": "FLEX",
+  "matrix": [
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.9551019153740387,
+    0.947834389646598
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.9599983138662749,
+    0.9599983138662749,
+    0.9551019153740387,
+    0.947834389646598
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to appliance"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "method": "ALGAE",
+  "matrix": [
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.9565301332303442,
+    0.958799576473826,
+    0.9483141299353194,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.9565301332303442,
+    0.958799576473826,
+    0.9483141299353194,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.9565301332303442,
+    0.958799576473826,
+    0.9483141299353194,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.9565301332303442,
+    0.958799576473826,
+    0.9483141299353194,
+    0.8801010800902147
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to stove"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "method": "MFE",
+  "matrix": [
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9241709636428297,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    0.9829277579983685,
+    0.9867890586388425
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Fridge'"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'kettle'",
+    "Presence of Heat Source Nearby"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "method": "USF",
+  "matrix": [
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9151872380451118,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.8450569629767295,
+    0.8801010800902147
+   ],
+   [
+    0.9151872380451118,
+    0.9733696585659071,
+    1.0,
+    1.0,
+    0.8801010800902147
+   ],
+   [
+    0.9092361842791424,
+    0.9681010263094391,
+    0.98969087068774,
+    1.0,
+    1.0
+   ],
+   [
+    1.0,
+    0.9770010123028352,
+    0.9770010123028352,
+    0.976410785098013,
+    0.9867890586388425
+   ],
+   [
+    1.0,
+    0.7849710550198667,
+    0.7849710550198667,
+    0.9695143623875694,
+    0.9764094270209608
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from fridge to goal",
+    "Relative position of fridge to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal",
+    "Distance from fridge to stove"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Average distance from agent to all objects",
+    "Proximity to heat source"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to stove",
+    "Distance from agent to kettle",
+    "Average distance from agent to all heat sources",
+    "Proximity to nearest heat source"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to object1",
+    "Manhattan distance from agent to goal",
+    "Manhattan distance from agent to object1",
+    "Relative position of the goal to the agent",
+    "Relative position of object1",
+    "Proximity alert for object1"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "method": "FLEX",
+  "matrix": [
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to appliance"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to heat source"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "method": "ALGAE",
+  "matrix": [
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.950944953664367,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.950944953664367,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.950944953664367,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.950944953664367,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.950944953664367,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge"
+   ],
+   [
+    "distance to goal",
+    "distance to fridge",
+    "distance to kettle"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "method": "MFE",
+  "matrix": [
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    0.8236848982657233,
+    1.0,
+    0.9784213531231067,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9920165953608093,
+    0.9920165953608093,
+    0.9910014557654976,
+    0.9845429592120192
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'Fridge'",
+    "Presence of Light Source",
+    "Proximity to Icy Surface"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal"
+   ],
+   [
+    "distance to goal",
+    "Distance to Nearest Object of Type 'kettle'",
+    "Presence of Heat Source in Vicinity"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "method": "USF",
+  "matrix": [
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    1.0,
+    1.0,
+    1.0,
+    0.9230811997646442,
+    0.9013930009925023
+   ],
+   [
+    0.662758998907353,
+    1.0,
+    1.0,
+    0.9979883200482785,
+    0.9982258240142948
+   ],
+   [
+    1.0,
+    0.9232305932682399,
+    0.9232305932682399,
+    0.9961649204952543,
+    0.9964770296027795
+   ]
+  ],
+  "features": [
+   [
+    "distance to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from fridge to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to fridge",
+    "Distance from agent to stove",
+    "Distance from fridge to goal",
+    "Distance from stove to goal",
+    "Distance from fridge to stove"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to stove",
+    "Distance from agent to kettle",
+    "Average distance from agent to all heat sources",
+    "Distance from stove to kettle"
+   ],
+   [
+    "Distance from agent to goal",
+    "Distance from agent to object1",
+    "Proximity to object1",
+    "Relative position of agent to goal",
+    "Relative position of agent to object1"
+   ]
+  ]
+ }
+]
