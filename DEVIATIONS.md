@@ -9,3 +9,7 @@
 7. **Simulated expert demos:** 5 demos per seed, sampled from the Boltzmann model (Eq. 2) with rationality β = 5. With β = 1 even the correct features only reached R̂ = 0.96, so demos were too noisy to match the paper's 1.00.
 8. **IRL details:** maximum likelihood over the exact set of 12,870 paths; features standardised; tiny L2 (1e-3) to keep θ finite.
 9. **Layout seeding:** the random generator is seeded with (seed, domain), so KitchenWorld and LavaLand get different layouts for the same seed.
+10. **Single-turn LLM calls.** The paper's code prompt says "the feature identified above" (a follow-up message in one conversation). Our calls are single-turn, so the feature name is inserted into the code prompt explicitly.
+11. **2D code-generation template:** the appendix's generic template shows the Franka signature (environment, trajs, robot_env); for 2D we use the 2D inputs/example from the same appendix, with get_objects_with_property returning [x, y].
+12. **GENERALIZE duplicates:** when two features generalize to the same name (e.g. laptop and phone → electronics), we keep one. The paper does not say how this is handled.
+13. **Safety defaults:** an unparseable MASK answer keeps the feature; MASK is never allowed to remove every feature; generated code that crashes is sent back to the LLM with the error (max 3 tries).
