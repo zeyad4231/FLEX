@@ -8,6 +8,7 @@ that the GENERALIZE operation uses.
 from itertools import combinations
 from math import comb
 
+from matplotlib.pylab import seed
 import numpy as np
 
 GRID = 9
@@ -47,7 +48,8 @@ def make_env(domain, seed):
     Start = a random corner, goal = the opposite corner.
     Objects = distinct random interior cells.
     """
-    rng = np.random.default_rng(seed)
+# domain index in the seed -> kitchen and lava get different layouts
+    rng = np.random.default_rng([seed, list(DOMAINS).index(domain)])
     spec = DOMAINS[domain]
     corners = [(0, 0), (0, 8), (8, 0), (8, 8)]
     start = corners[rng.integers(4)]
