@@ -17,10 +17,10 @@ from pathlib import Path
 import numpy as np
 
 import llm
-from baselines import METHODS
+from baselines import METHODS, PAPER_METHODS
 from flex import hand_feature, names
 from gridworld import make_env, all_trajectories, to_flat
-from irl import true_rewards, sample_demos, learn_theta, plan, normalized_reward
+from irl import true_rewards, sample_demos, learn_theta, plan, normalized_reward, make_mask_verifier
 
 # Per world: correction, and which object plays the role of stove / kettle / fridge.
 WORLDS = {
@@ -73,7 +73,7 @@ def start_features(scenario, world):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--methods", nargs="+", default=list(METHODS))
+    ap.add_argument("--methods", nargs="+", default=PAPER_METHODS)
     ap.add_argument("--domains", nargs="+", default=list(WORLDS))
     ap.add_argument("--seeds", nargs="+", type=int, default=list(range(5)))
     ap.add_argument("--scenarios", nargs="+", default=list(SCENARIOS))
@@ -92,10 +92,11 @@ def main():
                 true_r = true_rewards(domain, env, trajs)
                 start = start_features(scenario, world)
                 before = score(start, env, trajs, true_r, seed)
+                verifier = make_mask_verifier(feature_column, env, trajs, sample_demos(true_r, seed=seed))
                 for method in args.methods:
                     try:
                         feats, log = METHODS[method](start, env, trajs[0], world["instruction"], [],
-                                                     world["correction"])
+                                                     world["correction"], verifier=verifier)
                         rhat = score(feats, env, trajs, true_r, seed)
                     except Exception as e:  # keep the run going; record the failure
                         feats, log, rhat = start, [("ERROR", f"{type(e).__name__}: {e}")], float("nan")

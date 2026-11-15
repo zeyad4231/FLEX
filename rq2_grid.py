@@ -21,10 +21,10 @@ from pathlib import Path
 import numpy as np
 
 import llm
-from baselines import METHODS
+from baselines import METHODS, PAPER_METHODS
 from flex import hand_feature, names
 from gridworld import DOMAINS, GRID, all_trajectories, to_flat, render
-from irl import true_rewards, sample_demos, learn_theta, plan, normalized_reward
+from irl import true_rewards, sample_demos, learn_theta, plan, normalized_reward, make_mask_verifier
 
 INSTRUCTION = "Navigate to the goal."
 
@@ -133,10 +133,11 @@ def run(methods, seeds, out):
             snapshots = [names(features)]
             matrix = [[score(features, stages[j], seed) for j in range(K)]]  # row 0 = Phi^0
             for k, st in enumerate(STAGES):
-                env, trajs, _ = stages[k]
+                env, trajs, true_r = stages[k]
+                verifier = make_mask_verifier(feature_column, env, trajs, sample_demos(true_r, seed=seed))
                 try:
                     features, log = METHODS[method](features, env, trajs[0], INSTRUCTION, list(history),
-                                                    st["correction"])
+                                                    st["correction"], verifier=verifier)
                 except Exception as e:
                     log = [("ERROR", f"{type(e).__name__}: {e}")]
                 # The goal term belongs to the task ("Navigate to the goal"), not to the
@@ -196,7 +197,7 @@ def plot(rows, methods, out):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--methods", nargs="+", default=list(METHODS))
+    ap.add_argument("--methods", nargs="+", default=PAPER_METHODS)
     ap.add_argument("--seeds", nargs="+", type=int, default=list(range(5)))
     ap.add_argument("--out", default="results/rq2_grid")
     ap.add_argument("--show-layouts", action="store_true", help="print the 5 stage grids and exit")

@@ -22,3 +22,7 @@
 
 ## Observations (continued)
 - **RQ2 test (gpt-4o, seed 0):** MASK voted to remove *every* feature in stages 2, 3 and 4 (our "never empty the set" default kept the list) and removed "distance to goal" in stage 1. GENERALIZE over-generalized "fridge → appliance" (stage 1) and once turned "heat source" back into "stove" (stage 2). The paper does not specify behaviour when MASK empties the feature set.
+## Improvements (ours, not in the paper)
+
+- **Improvement 3 — demo-verified MASK (FLEX+V).** Before MASK removes a feature, a likelihood-ratio test checks whether the user's demonstrations become significantly less likely without it: LR = 2·(LL_with − LL_without) on the paper's own Boltzmann model (Eq. 2–3); removal is refused if LR ≥ 3.84 (χ², 1 dof, p = 0.05). Uses only the demos the robot already has; zero extra LLM calls. Sanity check with hand-written features (10 layouts): dropping the relevant feature gives LR 4.8–35.3, dropping the irrelevant one 0.0–1.7.
+- **FLEX+V on RQ1 (15 Nov, $0 — all LLM answers cached):** average R̂ 0.92 (faithful FLEX) → 0.98 (FLEX+V); paper reports 0.99. All 21 over-masking runs fixed. Remaining failures: correlated features (fridge next to heat sources, kitchen seed 3) defeat the one-at-a-time test; one false refusal (meadow kept, lava All-three seed 4, R̂ 0.40) — expected at a 5% significance level with 5 demos.

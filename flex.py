@@ -92,7 +92,7 @@ def _same(a, b):
 
 
 # -------------------------------------------------------------------- ADD
-def op_add(features, env, test_traj, instruction, history, correction, log):
+def op_add(features, env, test_traj, instruction, history, correction, log, verifier=None):
     prompt = P.ADD_GENERATE_FEATURE.format(env=env_text(env), instruction=instruction,
                                            history=history, correction=correction,
                                            features=names(features))
@@ -115,7 +115,7 @@ def op_add(features, env, test_traj, instruction, history, correction, log):
 
 
 # ------------------------------------------------------------- GENERALIZE
-def op_generalize(features, env, test_traj, instruction, history, correction, log):
+def op_generalize(features, env, test_traj, instruction, history, correction, log, verifier=None):
     common = dict(env=env_text(env), instruction=instruction, history=history, correction=correction)
     intent = llm.chat(P.GEN_EXTRACT_INTENT.format(**common), system=P.SYSTEM_2D).strip()
     log.append(("GENERALIZE", f"intent: {intent}"))
@@ -154,7 +154,7 @@ def op_generalize(features, env, test_traj, instruction, history, correction, lo
 
 
 # -------------------------------------------------------------------- MASK
-def op_mask(features, env, test_traj, instruction, history, correction, log):
+def op_mask(features, env, test_traj, instruction, history, correction, log, verifier=None):
     keep = []
     for f in features:
         prompt = P.MASK_ELEMENT.format(env=env_text(env), instruction=instruction, history=history,
@@ -162,6 +162,13 @@ def op_mask(features, env, test_traj, instruction, history, correction, log):
         answer = llm.chat(prompt, system=P.SYSTEM_2D).strip()
         digit = re.search(r"[01]", answer)
         relevant = digit is None or digit.group() == "1"  # unparseable -> keep (safe default)
+        if not relevant and verifier is not None:  # IMPROVEMENT 3: demos must agree
+            allowed, lr = verifier(features, f)
+            if not allowed:
+                log.append(("MASK-CHECK", f"refused removing '{f['name']}': demos depend on it (LR={lr:.1f})"))
+                relevant = True
+            else:
+                log.append(("MASK-CHECK", f"allowed removing '{f['name']}' (LR={lr:.1f})"))
         if relevant:
             keep.append(f)
         else:
@@ -179,12 +186,13 @@ OPS = {"add": op_add, "generalize": op_generalize, "mask": op_mask}
 
 
 def flex_update(features, env, test_traj, instruction, history, correction,
-                ops=("add", "generalize", "mask")):
+                ops=("add", "generalize", "mask"), verifier=None):
     """One FLEX round: apply the chosen operations in order (paper: ADD -> GENERALIZE -> MASK).
-    ops=("add",) gives the ALGAE-style add-only baseline."""
+    ops=("add",) gives the ALGAE-style add-only baseline.
+    verifier: optional demo check for MASK (improvement 3); None = the paper's FLEX."""
     log = []
     for op in ops:
-        features = OPS[op](features, env, test_traj, instruction, history, correction, log)
+        features = OPS[op](features, env, test_traj, instruction, history, correction, log, verifier=verifier)
     return features, log
 
 

@@ -90,6 +90,34 @@ def learn_theta(Phi, demo_idx, l2=1e-3):
     return res.x, X
 
 
+def demo_log_likelihood(Phi, demo_idx):
+    """log p(demos | best theta) for a feature matrix (Eq. 2-3). Empty Phi = uniform."""
+    if Phi.shape[1] == 0:
+        return -len(demo_idx) * np.log(len(Phi))
+    theta, X = learn_theta(Phi, demo_idx)
+    s = X @ theta
+    return float(s[demo_idx].sum() - len(demo_idx) * logsumexp(s))
+
+
+def make_mask_verifier(column, env, trajs, demo_idx, threshold=3.84):
+    """IMPROVEMENT 3: check a MASK decision against the user's demonstrations.
+
+    Removing a feature is allowed only if the demos do not become significantly
+    less likely without it. Likelihood-ratio test between the nested models
+    (with / without the feature): LR = 2 * (LL_with - LL_without), compared with
+    3.84 (chi-square, 1 dof, p = 0.05).
+    column(feature, env, trajs) -> feature values for all paths.
+    """
+    def allow_removal(features, feature):
+        cols = {id(f): column(f, env, trajs) for f in features}
+        with_f = np.stack([cols[id(f)] for f in features], axis=1)
+        rest = [cols[id(f)] for f in features if f is not feature]
+        without_f = np.stack(rest, axis=1) if rest else np.zeros((len(trajs), 0))
+        lr = 2 * (demo_log_likelihood(with_f, demo_idx) - demo_log_likelihood(without_f, demo_idx))
+        return lr < threshold, lr
+    return allow_removal
+
+
 def plan(X, theta):
     """Robot picks the highest-reward path (argmax)."""
     return int(np.argmax(X @ theta))

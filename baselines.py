@@ -57,11 +57,11 @@ def _build(feature_names, existing, env, test_traj, log, tag):
     return out
 
 
-def algae_update(features, env, test_traj, instruction, history, correction):
+def algae_update(features, env, test_traj, instruction, history, correction, verifier=None):
     return flex_update(features, env, test_traj, instruction, history, correction, ops=("add",))
 
 
-def mfe_update(features, env, test_traj, instruction, history, correction):
+def mfe_update(features, env, test_traj, instruction, history, correction, verifier=None):
     log = []
     answer = llm.chat(P.MFE_EXHAUSTIVE.format(env=env_text(env), features=names(features)), system=P.SYSTEM_2D)
     proposed = [n for n in parse_feature_list(answer) if not any(_same(n, f["name"]) for f in features)]
@@ -70,7 +70,7 @@ def mfe_update(features, env, test_traj, instruction, history, correction):
     return kept, log
 
 
-def usf_update(features, env, test_traj, instruction, history, correction):
+def usf_update(features, env, test_traj, instruction, history, correction, verifier=None):
     log = []
     answer = llm.chat(P.USF_UPDATE.format(env=env_text(env), instruction=instruction, history=history,
                                           correction=correction), system=P.SYSTEM_2D)
@@ -83,8 +83,16 @@ def usf_update(features, env, test_traj, instruction, history, correction):
     return new, log
 
 
-def flex_full(features, env, test_traj, instruction, history, correction):
+def flex_full(features, env, test_traj, instruction, history, correction, verifier=None):
+    """The paper's FLEX (no demo check, even if a verifier is offered)."""
     return flex_update(features, env, test_traj, instruction, history, correction)
 
 
-METHODS = {"FLEX": flex_full, "ALGAE": algae_update, "MFE": mfe_update, "USF": usf_update}
+def flex_verified(features, env, test_traj, instruction, history, correction, verifier=None):
+    """IMPROVEMENT 3: FLEX whose MASK decisions are checked against the demos."""
+    return flex_update(features, env, test_traj, instruction, history, correction, verifier=verifier)
+
+
+METHODS = {"FLEX": flex_full, "ALGAE": algae_update, "MFE": mfe_update, "USF": usf_update,
+           "FLEX+V": flex_verified}
+PAPER_METHODS = ["FLEX", "ALGAE", "MFE", "USF"]
