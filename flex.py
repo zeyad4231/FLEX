@@ -92,7 +92,7 @@ def _same(a, b):
 
 
 # -------------------------------------------------------------------- ADD
-def op_add(features, env, test_traj, instruction, history, correction, log, verifier=None):
+def op_add(features, env, test_traj, instruction, history, correction, log, verifier=None, memory=None):
     prompt = P.ADD_GENERATE_FEATURE.format(env=env_text(env), instruction=instruction,
                                            history=history, correction=correction,
                                            features=names(features))
@@ -105,6 +105,13 @@ def op_add(features, env, test_traj, instruction, history, correction, log, veri
     if any(_same(new_name, n) for n in names(features)):
         log.append(("ADD", f"proposed '{new_name}' already exists -> skipped"))
         return features
+    if memory:  # IMPROVEMENT 1: reuse an archived feature instead of writing new code
+        old = _match_memory(new_name, memory, log)
+        if old is not None:
+            memory.remove(old)
+            old["from_memory"] = True
+            log.append(("MEMORY", f"reactivated '{old['name']}' (code + learned weight) for proposed '{new_name}'"))
+            return features + [old]
     try:
         feat = generate_feature_code(new_name, env, test_traj)
     except RuntimeError as e:
@@ -115,7 +122,7 @@ def op_add(features, env, test_traj, instruction, history, correction, log, veri
 
 
 # ------------------------------------------------------------- GENERALIZE
-def op_generalize(features, env, test_traj, instruction, history, correction, log, verifier=None):
+def op_generalize(features, env, test_traj, instruction, history, correction, log, verifier=None, memory=None):
     common = dict(env=env_text(env), instruction=instruction, history=history, correction=correction)
     intent = llm.chat(P.GEN_EXTRACT_INTENT.format(**common), system=P.SYSTEM_2D).strip()
     log.append(("GENERALIZE", f"intent: {intent}"))
@@ -138,8 +145,18 @@ def op_generalize(features, env, test_traj, instruction, history, correction, lo
         old_name, new_name = f["name"], renames.get(f["name"])
         if new_name:
             try:
-                f = generate_feature_code(new_name, env, test_traj)
-                log.append(("GENERALIZE", f"{old_name} -> {new_name}"))
+                g = generate_feature_code(new_name, env, test_traj)
+                ok, drop = (True, 0.0)
+                if verifier is not None and hasattr(verifier, "rename_ok"):  # improvement 3 guard
+                    ok, drop = verifier.rename_ok(features, f, g)
+                if ok:
+                    for key in ("refers_to", "from_memory", "theta_raw"):  # keep memory through renames
+                        if key in f:
+                            g[key] = f[key]
+                    f = g
+                    log.append(("GENERALIZE", f"{old_name} -> {new_name}"))
+                else:
+                    log.append(("GEN-CHECK", f"refused '{old_name}' -> '{new_name}': demos fit worse (drop={drop:.1f})"))
             except RuntimeError as e:
                 log.append(("GENERALIZE", f"code generation failed for '{new_name}' -> kept '{old_name}'"))
         key = re.sub(r"[^a-z0-9]", "", f["name"].lower())
@@ -154,7 +171,7 @@ def op_generalize(features, env, test_traj, instruction, history, correction, lo
 
 
 # -------------------------------------------------------------------- MASK
-def op_mask(features, env, test_traj, instruction, history, correction, log, verifier=None):
+def op_mask(features, env, test_traj, instruction, history, correction, log, verifier=None, memory=None):
     keep = []
     for f in features:
         prompt = P.MASK_ELEMENT.format(env=env_text(env), instruction=instruction, history=history,
@@ -173,6 +190,10 @@ def op_mask(features, env, test_traj, instruction, history, correction, log, ver
             keep.append(f)
         else:
             log.append(("MASK", f"- {f['name']}"))
+            if memory is not None:  # IMPROVEMENT 1: archive instead of forgetting
+                f["refers_to"] = f.get("refers_to") or grounding(f, env)
+                memory.append(f)
+                log.append(("MEMORY", f"archived '{f['name']}' (measures: {', '.join(f['refers_to']) or '?'})"))
     if not keep:  # never return an empty feature set
         log.append(("MASK", "would remove everything -> kept original set"))
         return features
@@ -181,18 +202,77 @@ def op_mask(features, env, test_traj, instruction, history, correction, log, ver
     return keep
 
 
+# ---------------------------------------------------------------- memory
+MEMORY_MATCH = """A robot keeps an archive of features it used before. A new feature has been proposed:
+proposed = "{proposed}"
+
+Archived features:
+{archive}
+
+Does the proposed feature measure the same quantity as one of the archived features (same object or property, same kind of measurement)? Answer with ONLY the number of the matching archived feature, or NONE."""
+
+
+def grounding(feature, env, step=50):
+    """Which objects does this feature actually measure? Blank out each object in turn and
+    see whether the feature values change (on every `step`-th path). Names can drift
+    (fridge -> light source); the objects a feature measures do not."""
+    from gridworld import all_trajectories
+    paths = [to_flat(t) for t in all_trajectories(env)[::step]]
+
+    def values(e):
+        out = []
+        for p in paths:
+            try:
+                out.append(float(np.asarray(feature["fn"](e, p)).reshape(-1)[0]))
+            except Exception:
+                out.append(np.nan)
+        return np.array(out)
+
+    with np.errstate(all="ignore"):
+        base = values(env)
+        found = []
+        for k in range(1, 4):
+            if not env.get(f"objects{k} pos"):
+                continue
+            blanked = dict(env, **{f"objects{k} pos": []})
+            if not np.allclose(values(blanked), base, equal_nan=True):
+                found.append(env[f"objects{k} type"])
+    return found
+
+
+def _match_memory(proposed, memory, log):
+    """Match by name, then by the objects the archived feature measures, then one LLM call."""
+    for f in memory:
+        if _same(f["name"], proposed):
+            return f
+    words = re.sub(r"[^a-z ]", " ", proposed.lower()).split()
+    for f in memory:  # e.g. proposed 'distance to fridge' vs archived 'light source' that measures the fridge
+        if len(f.get("refers_to", [])) == 1 and f["refers_to"][0].lower() in words:
+            return f
+    archive = "\n".join(f"{i + 1}. {f['name']}" + (f" (in practice it measures: {', '.join(f['refers_to'])})"
+                                                   if f.get("refers_to") else "") for i, f in enumerate(memory))
+    answer = llm.chat(MEMORY_MATCH.format(proposed=proposed, archive=archive)).strip()
+    m = re.search(r"\d+", answer)
+    if m and "NONE" not in answer.upper() and 1 <= int(m.group()) <= len(memory):
+        return memory[int(m.group()) - 1]
+    log.append(("MEMORY", f"no archived match for '{proposed}'"))
+    return None
+
+
 # ------------------------------------------------------------------ FLEX
 OPS = {"add": op_add, "generalize": op_generalize, "mask": op_mask}
 
 
 def flex_update(features, env, test_traj, instruction, history, correction,
-                ops=("add", "generalize", "mask"), verifier=None):
+                ops=("add", "generalize", "mask"), verifier=None, memory=None):
     """One FLEX round: apply the chosen operations in order (paper: ADD -> GENERALIZE -> MASK).
     ops=("add",) gives the ALGAE-style add-only baseline.
-    verifier: optional demo check for MASK (improvement 3); None = the paper's FLEX."""
+    verifier: optional demo check for MASK (improvement 3); None = the paper's FLEX.
+    memory:   optional list used as feature archive (improvement 1); None = the paper's FLEX."""
     log = []
     for op in ops:
-        features = OPS[op](features, env, test_traj, instruction, history, correction, log, verifier=verifier)
+        features = OPS[op](features, env, test_traj, instruction, history, correction, log,
+                           verifier=verifier, memory=memory)
     return features, log
 
 

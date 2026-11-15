@@ -66,7 +66,7 @@ def sample_demos(true_r, n_demos=5, beta=5.0, seed=0):
 
 
 # -------------------------------------------------------------------- IRL
-def learn_theta(Phi, demo_idx, l2=1e-3):
+def learn_theta(Phi, demo_idx, l2=1e-3, prior_mean=None, prior_strength=None):
     """Eq. 3 with a uniform prior = maximum likelihood (MaxEnt IRL).
 
     The normaliser sums over ALL 12,870 paths, so it is exact.
@@ -77,13 +77,17 @@ def learn_theta(Phi, demo_idx, l2=1e-3):
     X = (Phi - mu) / sd
     D = X[demo_idx]
     n = len(D)
+    # Gaussian prior on theta (standardised units). Default: tiny L2 around 0.
+    # IMPROVEMENT 1 passes a remembered weight as prior_mean for reactivated features.
+    m = np.zeros(X.shape[1]) if prior_mean is None else np.asarray(prior_mean, float)
+    lam = np.full(X.shape[1], l2) if prior_strength is None else np.asarray(prior_strength, float)
 
     def neg_log_lik(theta):
         s = X @ theta
         lse = logsumexp(s)
         p = np.exp(s - lse)
-        value = -(D @ theta).sum() + n * lse + l2 * theta @ theta
-        grad = -D.sum(0) + n * (p @ X) + 2 * l2 * theta
+        value = -(D @ theta).sum() + n * lse + (lam * (theta - m) ** 2).sum()
+        grad = -D.sum(0) + n * (p @ X) + 2 * lam * (theta - m)
         return value, grad
 
     res = minimize(neg_log_lik, np.zeros(X.shape[1]), jac=True, method="L-BFGS-B")
@@ -115,6 +119,16 @@ def make_mask_verifier(column, env, trajs, demo_idx, threshold=3.84):
         without_f = np.stack(rest, axis=1) if rest else np.zeros((len(trajs), 0))
         lr = 2 * (demo_log_likelihood(with_f, demo_idx) - demo_log_likelihood(without_f, demo_idx))
         return lr < threshold, lr
+
+    def allow_rename(features, old, new):
+        """GENERALIZE guard: replacing `old` by `new` must not make the demos significantly
+        less likely (same threshold, applied to the drop in log-likelihood)."""
+        before = np.stack([column(f, env, trajs) for f in features], axis=1)
+        after = np.stack([column(new if f is old else f, env, trajs) for f in features], axis=1)
+        drop = 2 * (demo_log_likelihood(before, demo_idx) - demo_log_likelihood(after, demo_idx))
+        return drop < threshold, drop
+
+    allow_removal.rename_ok = allow_rename
     return allow_removal
 
 
