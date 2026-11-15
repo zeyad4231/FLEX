@@ -172,3 +172,25 @@ CODE_RETRY = """
 Your previous code failed with this error:
 {error}
 Please fix it and answer again in the same format."""
+
+# ------------------------------------------------------------- baselines
+# Appendix 7.2. MFE and USF use the same code-generation and masking prompts as FLEX.
+MFE_EXHAUSTIVE = """This is an environment config: {env}
+
+Use this to give specific feature(s) in that environment that explains what are relevant properties in the environment. If there are multiple of the same object, please give the average distance to all objects of that type.
+
+Please specify feature(s) that we can write code to compute from the position of the agent to other objects in the scene. This is the current list of features that we already know: {features}. Please give different features in your answer (e.g. if distance to goal feature is already in the list, do not give distance to goal again).
+
+Please give your confidence for each feature between 0 and 1. You may ground your answer in visible objects in the scene, and give answers that we can compute relative to the position of the agent."""
+
+USF_UPDATE = """This is an environment config: {env}
+
+The following is an instruction for a task that the agent needs to complete in this environment. instruction = {instruction}
+
+The following is a history of corrections that the agent has been provided. history = {history}
+
+The following is the most recent addendum to the original instruction after the agent asked for clarification about the task. addendum = {correction}
+
+Based on this, create a feature list that contains computable numeric values (e.g. "distance from agent to object X") derived from scene state. These features will be used by a downstream model that has NO access to the instruction, corrections, or addendum text -- only to the feature values.
+
+If there are multiple of the same object, please give the average distance to all objects of that type. Please specify feature(s) that we can write code to compute from the position of the agent to other objects in the scene. Every feature in your answer must be unique (e.g. if one feature is distance to goal, do not create another feature that is distance to goal again).Please give your confidence for each feature between 0 and 1. Ground your answer in visible objects in the scene, and give answers that we can compute relative to the position of the agent."""

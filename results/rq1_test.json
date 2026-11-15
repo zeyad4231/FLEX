@@ -1,0 +1,299 @@
+[
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX",
+  "before": 0.9126498070755991,
+  "rhat": 1.0,
+  "start": [
+   "distance to goal",
+   "distance to fridge"
+  ],
+  "final": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "log": [
+   [
+    "ADD",
+    "+ distance to stove"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to caution the agent to avoid contact with the stove, which is a heat source and could potentially cause harm or impede the agent's progress. This guidance is provided to ensure the agent safely navigates to the goal without encountering obstacles that could damage it or hinder its task completion."
+   ],
+   [
+    "GENERALIZE",
+    "distance to stove -> distance to heat source"
+   ],
+   [
+    "MASK",
+    "- distance to fridge"
+   ]
+  ]
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "ALGAE",
+  "before": 0.9126498070755991,
+  "rhat": 0.9126498070755991,
+  "start": [
+   "distance to goal",
+   "distance to fridge"
+  ],
+  "final": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "log": [
+   [
+    "ADD",
+    "+ distance to stove"
+   ]
+  ]
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "MFE",
+  "before": 0.9126498070755991,
+  "rhat": 0.3716838543971253,
+  "start": [
+   "distance to goal",
+   "distance to fridge"
+  ],
+  "final": [
+   "distance to goal",
+   "Distance to Stove",
+   "Average Distance to Heat Sources"
+  ],
+  "log": [
+   [
+    "MFE-LIST",
+    "+ Distance to Stove"
+   ],
+   [
+    "MFE-LIST",
+    "+ Distance to Kettle"
+   ],
+   [
+    "MFE-LIST",
+    "+ Average Distance to Heat Sources"
+   ],
+   [
+    "MFE-LIST",
+    "+ Average Distance to Appliances"
+   ],
+   [
+    "MASK",
+    "- distance to fridge"
+   ],
+   [
+    "MASK",
+    "- Distance to Kettle"
+   ],
+   [
+    "MASK",
+    "- Average Distance to Appliances"
+   ]
+  ]
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "USF",
+  "before": 0.9126498070755991,
+  "rhat": 0.9882756351376627,
+  "start": [
+   "distance to goal",
+   "distance to fridge"
+  ],
+  "final": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all objects",
+   "Proximity to nearest heat source",
+   "Proximity to nearest stationary object"
+  ],
+  "log": [
+   [
+    "USF",
+    "+ Distance from agent to goal"
+   ],
+   [
+    "USF",
+    "+ Distance from agent to fridge"
+   ],
+   [
+    "USF",
+    "+ Distance from agent to stove"
+   ],
+   [
+    "USF",
+    "+ Distance from agent to kettle"
+   ],
+   [
+    "USF",
+    "+ Average distance from agent to all objects"
+   ],
+   [
+    "USF",
+    "+ Proximity to nearest heat source"
+   ],
+   [
+    "USF",
+    "+ Proximity to nearest stationary object"
+   ],
+   [
+    "USF",
+    "new set: ['Distance from agent to goal', 'Distance from agent to fridge', 'Distance from agent to stove', 'Distance from agent to kettle', 'Average distance from agent to all objects', 'Proximity to nearest heat source', 'Proximity to nearest stationary object']"
+   ]
+  ]
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX",
+  "before": 1.0,
+  "rhat": 1.0,
+  "start": [
+   "distance to goal",
+   "distance to meadow"
+  ],
+  "final": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "log": [
+   [
+    "ADD",
+    "+ Distance to lava"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent avoids hazardous areas, specifically the lava, to prevent damage or failure while navigating to the goal. This guidance is provided to enhance the agent's safety and success in reaching the goal by avoiding dangerous terrain."
+   ],
+   [
+    "GENERALIZE",
+    "Distance to lava -> distance to dangerous terrain"
+   ],
+   [
+    "MASK",
+    "- distance to meadow"
+   ]
+  ]
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "ALGAE",
+  "before": 1.0,
+  "rhat": 0.9942799901938016,
+  "start": [
+   "distance to goal",
+   "distance to meadow"
+  ],
+  "final": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "log": [
+   [
+    "ADD",
+    "+ Distance to lava"
+   ]
+  ]
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "MFE",
+  "before": 1.0,
+  "rhat": 0.9972586344234343,
+  "start": [
+   "distance to goal",
+   "distance to meadow"
+  ],
+  "final": [
+   "distance to goal",
+   "Distance to Lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "log": [
+   [
+    "MFE-LIST",
+    "+ Distance to Lava"
+   ],
+   [
+    "MFE-LIST",
+    "+ Distance to Swamp"
+   ],
+   [
+    "MFE-LIST",
+    "+ Average Distance to Dangerous Terrain"
+   ],
+   [
+    "MASK",
+    "- distance to meadow"
+   ],
+   [
+    "MASK",
+    "- Distance to Swamp"
+   ]
+  ]
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "USF",
+  "before": 1.0,
+  "rhat": 0.9942799901938016,
+  "start": [
+   "distance to goal",
+   "distance to meadow"
+  ],
+  "final": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "log": [
+   [
+    "USF",
+    "+ Distance to Lava"
+   ],
+   [
+    "USF",
+    "+ Distance to Swamp"
+   ],
+   [
+    "USF",
+    "+ Proximity to Dangerous Terrain"
+   ],
+   [
+    "USF",
+    "+ Proximity to Safe Terrain"
+   ],
+   [
+    "USF",
+    "new set: ['distance to goal', 'distance to meadow', 'Distance to Lava', 'Distance to Swamp', 'Proximity to Dangerous Terrain', 'Proximity to Safe Terrain']"
+   ]
+  ]
+ }
+]

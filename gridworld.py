@@ -8,7 +8,6 @@ that the GENERALIZE operation uses.
 from itertools import combinations
 from math import comb
 
-from matplotlib.pylab import seed
 import numpy as np
 
 GRID = 9
@@ -42,13 +41,15 @@ DOMAINS = {
 }
 
 
-def make_env(domain, seed):
+def make_env(domain, seed, exclude=()):
     """Random environment config in the paper's format (Appendix 7.1).
 
     Start = a random corner, goal = the opposite corner.
     Objects = distinct random interior cells.
+    exclude: object types to leave out (e.g. ("kettle",)); the other objects keep
+    the same positions, so scenario variants of one seed share a layout.
     """
-# domain index in the seed -> kitchen and lava get different layouts
+    # domain index in the seed -> kitchen and lava get different layouts
     rng = np.random.default_rng([seed, list(DOMAINS).index(domain)])
     spec = DOMAINS[domain]
     corners = [(0, 0), (0, 8), (8, 0), (8, 8)]
@@ -65,7 +66,11 @@ def make_env(domain, seed):
         "goals color": spec["goal"]["color"],
         "goals type": spec["goal"]["type"],
     }
-    for k, (obj, p) in enumerate(zip(spec["objects"], picks), start=1):
+    k = 0
+    for obj, p in zip(spec["objects"], picks):
+        if obj["type"] in exclude:
+            continue
+        k += 1
         env[f"objects{k} pos"] = [list(interior[p])]
         env[f"objects{k} color"] = obj["color"]
         env[f"objects{k} type"] = obj["type"]

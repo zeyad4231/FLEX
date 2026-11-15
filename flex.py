@@ -105,7 +105,11 @@ def op_add(features, env, test_traj, instruction, history, correction, log):
     if any(_same(new_name, n) for n in names(features)):
         log.append(("ADD", f"proposed '{new_name}' already exists -> skipped"))
         return features
-    feat = generate_feature_code(new_name, env, test_traj)
+    try:
+        feat = generate_feature_code(new_name, env, test_traj)
+    except RuntimeError as e:
+        log.append(("ADD", f"code generation failed for '{new_name}' -> skipped ({e})"))
+        return features
     log.append(("ADD", f"+ {new_name}"))
     return features + [feat]
 
@@ -133,8 +137,11 @@ def op_generalize(features, env, test_traj, instruction, history, correction, lo
     for f in features:
         old_name, new_name = f["name"], renames.get(f["name"])
         if new_name:
-            f = generate_feature_code(new_name, env, test_traj)
-            log.append(("GENERALIZE", f"{old_name} -> {new_name}"))
+            try:
+                f = generate_feature_code(new_name, env, test_traj)
+                log.append(("GENERALIZE", f"{old_name} -> {new_name}"))
+            except RuntimeError as e:
+                log.append(("GENERALIZE", f"code generation failed for '{new_name}' -> kept '{old_name}'"))
         key = re.sub(r"[^a-z0-9]", "", f["name"].lower())
         if key in seen:  # two features generalized to the same name -> keep one (DEVIATIONS.md)
             log.append(("GENERALIZE", f"merged duplicate '{f['name']}'"))
