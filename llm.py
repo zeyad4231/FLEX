@@ -64,7 +64,7 @@ def chat(prompt, system=None, model=None, temperature=0.0, sample_id=0):
 
     text = r.choices[0].message.content
     tin, tout = r.usage.prompt_tokens, r.usage.completion_tokens
-    pin, pout = PRICES.get(model, (0.0, 0.0))
+    pin, pout = next((PRICES[k] for k in sorted(PRICES, key=len, reverse=True) if model.startswith(k)), (0.0, 0.0))
     cost = (tin * pin + tout * pout) / 1e6
 
     usage["api_calls"] += 1
