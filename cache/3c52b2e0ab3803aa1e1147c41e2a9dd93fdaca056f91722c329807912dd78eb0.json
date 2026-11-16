@@ -1,0 +1,18 @@
+{
+  "model_requested": "gpt-4o",
+  "model_served": "gpt-4o-2024-08-06",
+  "messages": [
+    {
+      "role": "user",
+      "content": "A robot's reward is a weighted sum of these features: ['distance to goal', 'distance to heat source', 'distance to fridge'].\n\nEarlier corrections from the user: []\nThe user just said: \"Don't walk into the lava.\"\n\nDecide what kind of correction this is:\n- \"which\": the user points to something the robot should start or stop paying attention to (a new object or property, a different object, or something to ignore).\n- \"how_much\": the user ONLY asks the robot to care MORE or LESS about something it already pays attention to (for example \"stay even further away from X\", \"you can get a bit closer to X\").\n\nAnswer in JSON only, with no other text:\n{\"type\": \"which\" or \"how_much\", \"feature\": \"<exact feature name from the list, or null>\", \"direction\": \"more\" or \"less\" or null, \"strength\": \"slightly\" or \"moderately\" or \"strongly\" or null}"
+    }
+  ],
+  "temperature": 0.0,
+  "sample_id": 0,
+  "response": "```json\n{\"type\": \"which\", \"feature\": null, \"direction\": null, \"strength\": null}\n```",
+  "tokens": {
+    "in": 212,
+    "out": 25
+  },
+  "cost_usd": 0.00078
+}

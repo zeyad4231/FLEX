@@ -1,0 +1,18 @@
+{
+  "model_requested": "gpt-4o",
+  "model_served": "gpt-4o-2024-08-06",
+  "messages": [
+    {
+      "role": "user",
+      "content": "A robot's reward is a weighted sum of these features: ['distance to goal', 'distance to heat source', 'distance to fridge'].\n\nEarlier corrections from the user: []\nThe user just said: \"Keep a bit more distance from the stove.\"\n\nDecide what kind of correction this is:\n- \"how_much\": the user asks the robot to care MORE or LESS about something, using a word of degree or comparison: further, closer, more, less, even, a bit, a little, much, too much, not that, so close, etc. Example: \"Stay even further away from the laptop\" -> how_much (more). Example: \"You can get a bit closer to the vase\" -> how_much (less).\n- \"which\": anything else. A plain instruction to avoid, approach, include or ignore something is \"which\", even if a related feature is already in the list. Example: \"Don't spill on my laptop\" -> which. Example: \"Stay close to the table\" -> which. Example: \"Ignore the bowl\" -> which. Example: \"Don't spill on my phone too\" -> which.\n\nAnswer in JSON only, with no other text:\n{\"type\": \"which\" or \"how_much\", \"feature\": \"<exact feature name from the list, or null>\", \"direction\": \"more\" or \"less\" or null, \"strength\": \"slightly\" or \"moderately\" or \"strongly\" or null}"
+    }
+  ],
+  "temperature": 0.0,
+  "sample_id": 0,
+  "response": "```json\n{\"type\": \"how_much\", \"feature\": \"distance to heat source\", \"direction\": \"more\", \"strength\": \"slightly\"}\n```",
+  "tokens": {
+    "in": 311,
+    "out": 34
+  },
+  "cost_usd": 0.0011175
+}

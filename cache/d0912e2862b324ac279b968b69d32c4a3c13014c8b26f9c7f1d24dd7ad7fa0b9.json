@@ -1,0 +1,18 @@
+{
+  "model_requested": "gpt-4o",
+  "model_served": "gpt-4o-2024-08-06",
+  "messages": [
+    {
+      "role": "user",
+      "content": "A robot keeps an archive of features it used before. A new feature has been proposed:\nproposed = \"Distance to fridge\"\n\nArchived features:\n1. distance to light source\n\nDoes the proposed feature measure the same quantity as one of the archived features (same object or property, same kind of measurement)? Answer with ONLY the number of the matching archived feature, or NONE."
+    }
+  ],
+  "temperature": 0.0,
+  "sample_id": 0,
+  "response": "NONE",
+  "tokens": {
+    "in": 82,
+    "out": 1
+  },
+  "cost_usd": 0.000215
+}
