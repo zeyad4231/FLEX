@@ -1,0 +1,886 @@
+[
+ {
+  "seed": 0,
+  "correction": "Stay much further away from the stove, even if you are farther from the fridge.",
+  "true_heat": 3.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "strongly",
+   "factor": 3.0
+  },
+  "scaled": true,
+  "FLEX+V": 0.8753648309080003,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent prioritizes safety by maintaining a greater distance from the stove, which is a heat source, even if it means being farther from the fridge. This suggests that the human is concerned about the potential hazards associated with the stove, such as heat or fire, and wants the agent to avoid these risks while navigating to the goal."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "correction": "Keep a bit more distance from the stove.",
+  "true_heat": 2.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "slightly",
+   "factor": 1.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.9340133235807795,
+  "FLEX+V+th": 0.9976178783879237,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent maintains a safe distance from the stove, likely due to its properties as a heat source, which could pose a risk or obstacle. The human wants the agent to prioritize safety while navigating to the goal, avoiding potential hazards associated with the stove."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=27.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "correction": "You can get closer to the stove, it's not that hot.",
+  "true_heat": 0.3,
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to stove",
+   "direction": "less",
+   "strength": "moderately",
+   "factor": 0.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.7154674028268107,
+  "FLEX+V+th": 0.977478750786488,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to reassure the agent that it is safe to approach the stove, which may have been perceived as a potential obstacle due to its heat-related properties. This guidance is meant to encourage the agent to take a more direct or efficient path to the goal, without unnecessary detours, by clarifying that the stove's heat is not a threat in this scenario."
+   ],
+   [
+    "GENERALIZE",
+    "distance to heat source -> distance to stove"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to stove': demos depend on it (LR=38.1)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=27.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 0,
+  "correction": "Getting a little closer to the stove is okay.",
+  "true_heat": 0.5,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "slightly",
+   "factor": 0.6666666666666666
+  },
+  "scaled": true,
+  "FLEX+V": 0.7998221002995518,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to clarify that while the primary task is to navigate to the goal, it is acceptable for the agent to approach the stove, suggesting that proximity to the stove is not a concern or may even be beneficial. This implies that the human wants to ensure the agent understands that avoiding the stove is not necessary, possibly due to the stove's properties or its position not posing a threat or obstacle to the task."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=38.1)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=27.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "correction": "Stay much further away from the stove, even if you are farther from the fridge.",
+  "true_heat": 3.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "strongly",
+   "factor": 3.0
+  },
+  "scaled": true,
+  "FLEX+V": 0.7404452338546342,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "+ Distance to stove"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to prioritize safety by ensuring the agent maintains a greater distance from the stove, which is a heat source and potentially hazardous, even if it means being farther from the fridge, which is less dangerous. This suggests that the human is concerned about the agent's proximity to objects that could pose a risk, emphasizing caution over efficiency in navigating to the goal."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=6.6)"
+   ],
+   [
+    "GENERALIZE",
+    "Distance to stove -> distance to heat source"
+   ],
+   [
+    "GENERALIZE",
+    "merged duplicate 'distance to heat source'"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=13.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "correction": "Keep a bit more distance from the stove.",
+  "true_heat": 2.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "slightly",
+   "factor": 1.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.807635981232899,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent maintains a safe distance from the stove, likely due to its properties as a heat source, which could pose a risk to the agent. The human wants the agent to prioritize safety while navigating to the goal, avoiding potential hazards associated with the stove."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=13.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "correction": "You can get closer to the stove, it's not that hot.",
+  "true_heat": 0.3,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "moderately",
+   "factor": 0.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.8708911668463287,
+  "FLEX+V+th": 0.9580331120246494,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to reassure the agent that it is safe to approach the stove, which may have been perceived as a potential obstacle due to its heat-related properties. This guidance is meant to encourage the agent to navigate more efficiently towards the goal without unnecessary detours, as the stove's heat is not a significant threat in this context."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=22.6)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=13.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 1,
+  "correction": "Getting a little closer to the stove is okay.",
+  "true_heat": 0.5,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "slightly",
+   "factor": 0.6666666666666666
+  },
+  "scaled": true,
+  "FLEX+V": 0.94558121601644,
+  "FLEX+V+th": 0.999804619249551,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to clarify that while the primary task is to navigate to the goal, it is acceptable for the agent to approach the stove, suggesting that proximity to the stove is not a concern or obstacle in this scenario. This implies that the human wants to ensure the agent understands that the presence of the stove does not pose a risk or require avoidance, allowing for more flexibility in the agent's path to the goal."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to heat source' -> 'distance to appliance': demos fit worse (drop=12.4)"
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=12.7)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=13.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "correction": "Stay much further away from the stove, even if you are farther from the fridge.",
+  "true_heat": 3.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "strongly",
+   "factor": 3.0
+  },
+  "scaled": true,
+  "FLEX+V": 0.7404452338546342,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent prioritizes safety by maintaining a greater distance from the stove, which is a heat source and potentially hazardous, even if it means being farther from the fridge. The human likely added this instruction to prevent the agent from encountering danger or damage from the stove's heat while navigating to the goal."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=9.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "correction": "Keep a bit more distance from the stove.",
+  "true_heat": 2.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "slightly",
+   "factor": 1.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.807635981232899,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent maintains a safe distance from the stove, likely due to its properties as a heat source, which could pose a risk or obstacle. The human wants the agent to prioritize safety while navigating to the goal, avoiding potential hazards associated with the stove."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=9.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "correction": "You can get closer to the stove, it's not that hot.",
+  "true_heat": 0.3,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "moderately",
+   "factor": 0.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.8708911668463287,
+  "FLEX+V+th": 0.9580331120246494,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to reassure the agent that it is safe to approach the stove, which may have been perceived as a potential obstacle due to its heat-related properties. This guidance is meant to encourage the agent to take a more direct or efficient path to the goal, without being overly cautious about the stove's presence."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to heat source' -> 'distance to appliance': demos fit worse (drop=8.3)"
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=7.7)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=20.7)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=9.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 2,
+  "correction": "Getting a little closer to the stove is okay.",
+  "true_heat": 0.5,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "slightly",
+   "factor": 0.6666666666666666
+  },
+  "scaled": true,
+  "FLEX+V": 0.94558121601644,
+  "FLEX+V+th": 0.999804619249551,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The human's addendum suggests that while the primary task is to navigate to the goal, it is acceptable for the agent to approach the stove, indicating that proximity to the stove is not a concern or may even be beneficial. This implies that the human is allowing flexibility in the agent's path, possibly to encourage exploration or to ensure the agent does not overly avoid the stove, which might be perceived as an obstacle."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to heat source' -> 'distance to appliance': demos fit worse (drop=8.3)"
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=7.7)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=20.7)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=9.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "correction": "Stay much further away from the stove, even if you are farther from the fridge.",
+  "true_heat": 3.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "strongly",
+   "factor": 3.0
+  },
+  "scaled": true,
+  "FLEX+V": 0.8749637356030445,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent prioritizes safety by maintaining a greater distance from the stove, which is likely considered hazardous due to its properties as a heat source. The human emphasizes this precaution even if it means the agent will be closer to the fridge, suggesting that the stove poses a greater risk that should be avoided during navigation."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "correction": "Keep a bit more distance from the stove.",
+  "true_heat": 2.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "slightly",
+   "factor": 1.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.9340895078403418,
+  "FLEX+V+th": 0.9975865434463611,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent maintains a safe distance from the stove, likely due to its properties as a heat source, which could pose a risk to the agent. The human wants the agent to prioritize safety while navigating to the goal, avoiding potential hazards associated with the stove."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=30.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "correction": "You can get closer to the stove, it's not that hot.",
+  "true_heat": 0.3,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "moderately",
+   "factor": 0.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.707699831585693,
+  "FLEX+V+th": 0.9731357572323994,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to reassure the agent that it is safe to approach the stove, suggesting that the agent should not avoid the area near the stove while navigating to the goal. This implies that the agent may have been overly cautious about the stove's heat, potentially affecting its path to the goal, and the human wants to ensure the agent takes an efficient route without unnecessary detours."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to heat source' -> 'distance to appliance': demos fit worse (drop=25.0)"
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=6.3)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=30.0)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=30.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 3,
+  "correction": "Getting a little closer to the stove is okay.",
+  "true_heat": 0.5,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "slightly",
+   "factor": 0.6666666666666666
+  },
+  "scaled": true,
+  "FLEX+V": 0.79230156308132,
+  "FLEX+V+th": 0.9980019800389262,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to clarify that while the primary task is to navigate to the goal, it is acceptable for the agent to approach the stove, suggesting that proximity to the stove is not a concern or may even be beneficial. This implies that the human is allowing flexibility in the agent's path, possibly to encourage exploration or to indicate that the stove does not pose a threat or obstacle to the task."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=30.2)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "correction": "Stay much further away from the stove, even if you are farther from the fridge.",
+  "true_heat": 3.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "strongly",
+   "factor": 3.0
+  },
+  "scaled": true,
+  "FLEX+V": 0.7429706119735636,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent prioritizes safety by maintaining a greater distance from the stove, which is a heat source, to avoid potential hazards. This suggests that the human is concerned about the risks associated with proximity to the stove, even if it means the agent must take a longer or less direct path to the goal."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "correction": "Keep a bit more distance from the stove.",
+  "true_heat": 2.0,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "more",
+   "strength": "slightly",
+   "factor": 1.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.8125869199713448,
+  "FLEX+V+th": 0.9718476809695789,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to ensure the agent maintains a safe distance from the stove, likely due to its properties as a heat source, which could pose a risk or obstacle. The purpose is to prioritize the agent's safety and successful navigation by avoiding potential hazards associated with the stove."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=17.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "correction": "You can get closer to the stove, it's not that hot.",
+  "true_heat": 0.3,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "moderately",
+   "factor": 0.5
+  },
+  "scaled": true,
+  "FLEX+V": 0.9074269076923559,
+  "FLEX+V+th": 1.0,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to reassure the agent that it is safe to approach the stove, which may have been perceived as a potential obstacle due to its heat-related properties. This guidance is meant to encourage the agent to optimize its path to the goal by not avoiding the stove unnecessarily, thus facilitating more efficient navigation."
+   ],
+   [
+    "GENERALIZE",
+    "no change"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to heat source': demos depend on it (LR=22.3)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=17.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ },
+ {
+  "seed": 4,
+  "correction": "Getting a little closer to the stove is okay.",
+  "true_heat": 0.5,
+  "features": [
+   "distance to goal",
+   "distance to heat source",
+   "distance to fridge"
+  ],
+  "decision": {
+   "type": "how_much",
+   "feature": "distance to heat source",
+   "direction": "less",
+   "strength": "slightly",
+   "factor": 0.6666666666666666
+  },
+  "scaled": true,
+  "FLEX+V": 0.9558956694618715,
+  "FLEX+V+th": 0.9975142678217279,
+  "log": [
+   [
+    "ADD",
+    "no new feature"
+   ],
+   [
+    "GENERALIZE",
+    "intent: The intent behind the human's addendum is to allow the agent some flexibility in its path to the goal, indicating that it is acceptable for the agent to approach the stove, which may be a potential obstacle, as long as it continues towards the goal. This suggests that the human is prioritizing reaching the goal over strictly avoiding certain objects, possibly due to the stove's position not posing a significant risk or hindrance to the task."
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to heat source' -> 'distance to appliance': demos fit worse (drop=20.3)"
+   ],
+   [
+    "GEN-CHECK",
+    "refused 'distance to fridge' -> 'distance to appliance': demos fit worse (drop=7.8)"
+   ],
+   [
+    "MASK-CHECK",
+    "refused removing 'distance to fridge': demos depend on it (LR=17.9)"
+   ],
+   [
+    "MASK",
+    "no change"
+   ]
+  ]
+ }
+]
