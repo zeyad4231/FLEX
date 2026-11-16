@@ -1,0 +1,4980 @@
+[
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5270226627485038
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Proximity to Heat Sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from goal to blue fridge",
+   "Distance from goal to red stove",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.5376809400297362
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5270226627485038
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8689553807742081,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9958440499403131,
+  "transfer": 0.6099246748471453
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from fridge to stove"
+  ],
+  "n_features": 6,
+  "in_scene": 0.986307148944287,
+  "transfer": 0.6860793109738491
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9958440499403131,
+  "transfer": 0.7375831674194102
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9081881841953707,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9081881841953707,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Fridge",
+   "Distance to Stove",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Fridge",
+   "Manhattan Distance to Stove",
+   "Relative Position to Goal",
+   "Relative Position to Fridge"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9883789608662221,
+  "transfer": 0.5483053954703777
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Object of Each Type",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Fridge",
+   "Distance to Stove",
+   "Is Agent on Goal",
+   "Is Agent on Fridge",
+   "Is Agent on Stove",
+   "Proximity to Stove"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.34823504892382345
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Object of Each Type",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9991559128972538
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from blue fridge to goal",
+   "Distance from red stove to goal",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9959526573076859,
+  "transfer": 0.9852055197482271
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Average distance to heat sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8816244049364997,
+  "transfer": 0.6582485669777484
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Distance to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all objects",
+   "Proximity to nearest heat source",
+   "Proximity to nearest stationary object"
+  ],
+  "n_features": 7,
+  "in_scene": 0.9882756351376627,
+  "transfer": 0.6776109614852137
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.5106397231043907,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.832978310345069
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.832978310345069
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from kettle to goal",
+   "Proximity to stove"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9931519024238216,
+  "transfer": 0.949925802745343
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9240636663703327,
+  "transfer": 0.6582485669777484
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.7578597677148878,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from agent to orange kettle",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to blue fridge",
+   "Manhattan distance from agent to red stove",
+   "Manhattan distance from agent to orange kettle"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9961575174822231,
+  "transfer": 0.973885347965319
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.877457287266263,
+  "transfer": 0.9029043518298261
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.2974925933679696,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.2974925933679696,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Blue Fridge",
+   "Distance to Red Stove",
+   "Distance to Orange Kettle",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Red Stove",
+   "Proximity Alert to Red Stove",
+   "Number of Objects within 2 Units"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9941356258824933,
+  "transfer": 0.5979202272878787
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.2974925933679696,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.832978310345069
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9561337061507252,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all appliances",
+   "Proximity to heat sources",
+   "Proximity to stationary objects"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.4279893694875341
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9980565424675997,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9868466045758089,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from goal to blue fridge",
+   "Distance from goal to red stove",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.5376809400297362
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9868466045758089,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8689553807742081,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7065022429967054
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from fridge to stove"
+  ],
+  "n_features": 6,
+  "in_scene": 0.986307148944287,
+  "transfer": 0.6860793109738491
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9958440499403131,
+  "transfer": 0.7375831674194102
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9081881841953707,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9948736100252983,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Fridge",
+   "Manhattan Distance to Stove",
+   "Relative Position to Goal",
+   "Relative Position to Fridge"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9883789608662221,
+  "transfer": 0.7574708942378571
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove",
+   "Is Agent on Goal",
+   "Is Agent on Fridge",
+   "Is Agent on Stove",
+   "Proximity to Stove"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.7673438338719973,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7065022429967054
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from blue fridge to goal",
+   "Distance from red stove to goal",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9959526573076859,
+  "transfer": 0.9852055197482271
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8784216239989605,
+  "transfer": 0.2974312864738047
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9450373273002636,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all objects",
+   "Proximity to nearest heat source",
+   "Proximity to nearest stationary object"
+  ],
+  "n_features": 7,
+  "in_scene": 0.9882756351376627,
+  "transfer": 0.6776109614852137
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.5106397231043907,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from kettle to goal",
+   "Proximity to stove"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9931519024238216,
+  "transfer": 0.949925802745343
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.607307430293165,
+  "transfer": 0.7130564859584171
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9813742306427572,
+  "transfer": 0.9029043518298261
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from agent to orange kettle",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to blue fridge",
+   "Manhattan distance from agent to red stove",
+   "Manhattan distance from agent to orange kettle"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9961575174822231,
+  "transfer": 0.973885347965319
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.877457287266263,
+  "transfer": 0.9029043518298261
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.18337810874008342,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Heat Source",
+   "Proximity to Stationary Objects"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9941356258824933,
+  "transfer": 0.40397456774067514
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Blue Fridge",
+   "Distance to Red Stove",
+   "Distance to Orange Kettle",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Red Stove",
+   "Proximity Alert to Red Stove",
+   "Number of Objects within 2 Units"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9941356258824933,
+  "transfer": 0.5979202272878787
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.877457287266263,
+  "transfer": 0.9029043518298261
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.8355416878177774
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Heat Source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9980565424675997,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all appliances",
+   "Proximity to heat sources",
+   "Proximity to stationary objects"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.4279893694875341
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9980565424675997,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9868466045758089,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7073201202383165
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9923694302414857,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from goal to blue fridge",
+   "Distance from goal to red stove",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.5376809400297362
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.9868466045758089,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8689553807742081,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9932344677589473,
+  "transfer": 0.6099246748471453
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from fridge to stove"
+  ],
+  "n_features": 6,
+  "in_scene": 0.986307148944287,
+  "transfer": 0.6860793109738491
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9958440499403131,
+  "transfer": 0.7375831674194102
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9081881841953707,
+  "transfer": 0.8355416878177774
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 0.995598267565277,
+  "transfer": 0.996076950247033
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to Stove",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Fridge",
+   "Manhattan Distance to Stove",
+   "Relative Position to Goal",
+   "Relative Position to Fridge"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9883789608662221,
+  "transfer": 0.5483053954703777
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8968955588017765,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7826530276403445
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to Stove",
+   "Is Agent on Goal",
+   "Is Agent on Fridge",
+   "Is Agent on Stove",
+   "Proximity to Stove"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.5890089241705195
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.934117074031054,
+  "transfer": 0.9596662797386996
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9351670847341377,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Proximity to Heat Source"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9759165994487782,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from blue fridge to goal",
+   "Distance from red stove to goal",
+   "Average distance from agent to all objects"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9959526573076859,
+  "transfer": 0.9852055197482271
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge",
+   "Distance to kettle"
+  ],
+  "n_features": 4,
+  "in_scene": 0.9803522746283416,
+  "transfer": 0.9736542962832666
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Proximity to Heat Sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all objects",
+   "Proximity to nearest heat source",
+   "Proximity to nearest stationary object"
+  ],
+  "n_features": 7,
+  "in_scene": 0.9882756351376627,
+  "transfer": 0.6776109614852137
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.5106397231043907,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.8473733261290443
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from kettle to goal",
+   "Proximity to stove"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9931519024238216,
+  "transfer": 0.949925802745343
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.7578597677148878,
+  "transfer": 0.3620176620934006
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge",
+   "Distance to kettle"
+  ],
+  "n_features": 4,
+  "in_scene": 0.969401916393243,
+  "transfer": 0.4262727629809973
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9866323860273024
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from agent to orange kettle",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to blue fridge",
+   "Manhattan distance from agent to red stove",
+   "Manhattan distance from agent to orange kettle"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9961575174822231,
+  "transfer": 0.973885347965319
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.877457287266263,
+  "transfer": 0.9029043518298261
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge",
+   "distance to kettle"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.9579006348520495
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9965100568934538,
+  "transfer": 0.94547931632752
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Blue Fridge",
+   "Distance to Red Stove",
+   "Distance to Orange Kettle",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Red Stove",
+   "Proximity Alert to Red Stove",
+   "Number of Objects within 2 Units"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9941356258824933,
+  "transfer": 0.5979202272878787
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to heat source"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9965100568934538,
+  "transfer": 0.94547931632752
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "distance to fridge"
+  ],
+  "n_features": 3,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.19018598540903756
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to stove",
+   "Proximity to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9979287498763565
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all appliances",
+   "Proximity to heat sources",
+   "Proximity to stationary objects"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.4279893694875341
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9980565424675997,
+  "transfer": 1.0
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9126498070755991,
+  "transfer": 0.3689044628690756
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 0.3716838543971253,
+  "transfer": 0.2729373862884494
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all objects",
+   "Proximity to nearest heat source",
+   "Proximity to nearest stationary object"
+  ],
+  "n_features": 7,
+  "in_scene": 0.9882756351376627,
+  "transfer": 0.6776109614852137
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.5106397231043907,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "Distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.8473733261290443
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9022363425243952,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Distance from fridge to goal",
+   "Distance from stove to goal",
+   "Distance from kettle to goal",
+   "Proximity to stove"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9931519024238216,
+  "transfer": 0.949925802745343
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.2609468380329751,
+  "transfer": 0.9388209078909725
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.9866323860273024
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to blue fridge",
+   "Distance from agent to red stove",
+   "Distance from agent to orange kettle",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to blue fridge",
+   "Manhattan distance from agent to red stove",
+   "Manhattan distance from agent to orange kettle"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9961575174822231,
+  "transfer": 0.973885347965319
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9986595860325073
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.4227198878988915,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9493847421524975,
+  "transfer": 0.9476088157534147
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Proximity to Heat Sources"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9999737901388649
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Blue Fridge",
+   "Distance to Red Stove",
+   "Distance to Orange Kettle",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Red Stove",
+   "Proximity Alert to Red Stove",
+   "Number of Objects within 2 Units"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9941356258824933,
+  "transfer": 0.5979202272878787
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to fridge"
+  ],
+  "n_features": 2,
+  "in_scene": 0.877457287266263,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.806653643639926
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to fridge",
+   "distance to stove"
+  ],
+  "n_features": 3,
+  "in_scene": 0.8856613109393896,
+  "transfer": 0.6356208810107761
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Stove",
+   "Average Distance to Heat Sources"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9561337061507252,
+  "transfer": 0.9688631549147103
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to fridge",
+   "Distance from agent to stove",
+   "Distance from agent to kettle",
+   "Average distance from agent to all appliances",
+   "Proximity to heat sources",
+   "Proximity to stationary objects"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.4279893694875341
+ },
+ {
+  "domain": "kitchen",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to heat source"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9980565424675997,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Lava",
+   "Average Distance to All Lavas",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 4,
+  "in_scene": 0.9882497609501258,
+  "transfer": 0.7460307604790901
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Proximity to Goal",
+   "Proximity to Meadow",
+   "Proximity to Lava",
+   "Path Safety Score",
+   "Number of Safe Tiles to Goal"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9830170919546904,
+  "transfer": 0.8092343542727264
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9162503557734912
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "Average distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9352747404907579
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Lava",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9352747404907579
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Distance from meadow to goal",
+   "Distance from lava to goal",
+   "Distance from meadow to lava"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.769456641058189
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9162503557734912
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.6602887287073589
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "average distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.6336507789757314
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.8135891236749426
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to meadow",
+   "Manhattan distance from agent to lava",
+   "Number of obstacles",
+   "Number of safe terrains"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9949288488549991,
+  "transfer": 0.7860363183247753
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.6602887287073589
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9805499377260377,
+  "transfer": 0.7808231733101861
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Lava",
+   "Average Distance to All Lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9805499377260377,
+  "transfer": 0.7808231733101861
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Is Agent on Meadow",
+   "Is Agent on Lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.7960199965145437
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Lava",
+   "Average Distance to All Lava"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.7934865201591114
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 5,
+  "in_scene": 0.9899682262919259,
+  "transfer": 0.9258310526795489
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9942799901938016,
+  "transfer": 0.9837662260112219
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9265420752492947,
+  "transfer": 0.9233022891449484
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9265420752492947,
+  "transfer": 0.9233022891449484
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9950821100331976,
+  "transfer": 0.8706371597877126
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8635006322323222,
+  "transfer": 0.9019709247940724
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 5,
+  "in_scene": 1.0,
+  "transfer": 0.8610298635775046
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9267360741101002,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9938870060811229,
+  "transfer": 0.8265789970857278
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9970713826977342,
+  "transfer": 0.866226455686656
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9772190743858717,
+  "transfer": 0.8167402993472815
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5106356123252817
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5106356123252817
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain",
+   "Average Distance to All Objects"
+  ],
+  "n_features": 7,
+  "in_scene": 0.40437267657829,
+  "transfer": 0.9489500949521655
+ },
+ {
+  "domain": "lava",
+  "scenario": "Gen only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9772190743858717,
+  "transfer": 0.8167402993472815
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9882497609501258,
+  "transfer": 0.7758036795470661
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9956811878914805,
+  "transfer": 0.8163580611016595
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Path Safety Score",
+   "Proximity to Safe Terrain",
+   "Number of Safe Tiles in Vicinity"
+  ],
+  "n_features": 5,
+  "in_scene": 1.0,
+  "transfer": 0.7890746425884142
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Proximity to Goal",
+   "Proximity to Meadow",
+   "Proximity to Lava",
+   "Path Safety Score",
+   "Number of Safe Tiles to Goal"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9956811878914805,
+  "transfer": 0.8266260616827394
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9882497609501258,
+  "transfer": 0.7758036795470661
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.769456641058189
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain",
+   "Path Safety Index"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.9990159834840173
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Distance from meadow to goal",
+   "Distance from lava to goal",
+   "Distance from meadow to lava"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.769456641058189
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9228276499325077
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.8105126680143612
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain",
+   "Path Safety Index"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.8930998998207826
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to meadow",
+   "Manhattan distance from agent to lava",
+   "Number of obstacles",
+   "Number of safe terrains"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9949288488549991,
+  "transfer": 0.7860363183247753
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9228276499325077
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.8053141308291764
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain",
+   "Path Safety Score"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.9031792214163591
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Is Agent on Meadow",
+   "Is Agent on Lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.8053141308291764
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9671325213071686,
+  "transfer": 0.784643833931689
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain",
+   "Number of Dangerous Terrains in Vicinity"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.9990159834840173
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 5,
+  "in_scene": 0.9671325213071686,
+  "transfer": 0.784643833931689
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask only",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Dangerous Object"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9942799901938016,
+  "transfer": 0.9837662260112219
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.976515755365069,
+  "transfer": 0.9598996659469207
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "Average distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.976515755365069,
+  "transfer": 0.9422023791173074
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Dangerous Object",
+   "Average Distance to All Dangerous Objects"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9937039572862743,
+  "transfer": 0.9816784702355549
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9937039572862743,
+  "transfer": 0.9662285594822029
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.976515755365069,
+  "transfer": 0.9598996659469207
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8635006322323222,
+  "transfer": 0.9019709247940724
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Dangerous Object",
+   "Presence of Dangerous Terrain in Path"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 5,
+  "in_scene": 1.0,
+  "transfer": 0.8610298635775046
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9945721578986787,
+  "transfer": 0.85378151812423
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Dangerous Object"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9912108377141488,
+  "transfer": 0.8751733742282268
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9772190743858717,
+  "transfer": 0.8167402993472815
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5106356123252817
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Nearest Dangerous Object",
+   "Average Distance to All Dangerous Objects"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9774963195186454,
+  "transfer": 0.9422023791173074
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "Distance to Meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain",
+   "Average Distance to All Objects"
+  ],
+  "n_features": 7,
+  "in_scene": 0.9774963195186454,
+  "transfer": 0.9422023791173074
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Gen",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9772190743858717,
+  "transfer": 0.8167402993472815
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9956811878914805,
+  "transfer": 0.8163580611016595
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain",
+   "Path Obstruction by Lava"
+  ],
+  "n_features": 4,
+  "in_scene": 0.9905886119247717,
+  "transfer": 0.7934865201591114
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Proximity to Goal",
+   "Proximity to Meadow",
+   "Proximity to Lava",
+   "Path Safety Score",
+   "Number of Safe Tiles to Goal"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9830170919546904,
+  "transfer": 0.8092343542727264
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9352747404907579
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain",
+   "Path Safety Score"
+  ],
+  "n_features": 4,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9352747404907579
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Distance from meadow to goal",
+   "Distance from lava to goal",
+   "Distance from meadow to lava"
+  ],
+  "n_features": 6,
+  "in_scene": 1.0,
+  "transfer": 0.769456641058189
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9810400006876212,
+  "transfer": 0.9352747404907579
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9228276499325077
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.5550036252228719
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain",
+   "Path Obstruction by Lava"
+  ],
+  "n_features": 4,
+  "in_scene": 1.0,
+  "transfer": 0.8105126680143612
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "Distance from agent to goal",
+   "Distance from agent to meadow",
+   "Distance from agent to lava",
+   "Manhattan distance from agent to goal",
+   "Manhattan distance from agent to meadow",
+   "Manhattan distance from agent to lava",
+   "Number of obstacles",
+   "Number of safe terrains"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9949288488549991,
+  "transfer": 0.7860363183247753
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9228276499325077
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9910714831701284,
+  "transfer": 0.7999336600107171
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain",
+   "Number of Safe Steps to Goal"
+  ],
+  "n_features": 4,
+  "in_scene": 0.9938402694926463,
+  "transfer": 0.8389368415645045
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Is Agent on Meadow",
+   "Is Agent on Lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 7,
+  "in_scene": 1.0,
+  "transfer": 0.7960199965145437
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.9961152042855433
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.8689553807742081,
+  "transfer": 0.5825852697488235
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9853893573445286,
+  "transfer": 0.9258310526795489
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9921980294262844,
+  "transfer": 0.7808231733101861
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Proximity to Lava",
+   "Proximity to Meadow"
+  ],
+  "n_features": 5,
+  "in_scene": 0.9899682262919259,
+  "transfer": 0.9258310526795489
+ },
+ {
+  "domain": "lava",
+  "scenario": "Add+Mask",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.769456641058189
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9972586344234343,
+  "transfer": 0.8206177192941753
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9942799901938016,
+  "transfer": 0.9837662260112219
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9265420752492947,
+  "transfer": 0.9233022891449484
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Average Distance to All Dangerous Terrains",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 4,
+  "in_scene": 0.976515755365069,
+  "transfer": 0.8758025477718393
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9950821100331976,
+  "transfer": 0.8706371597877126
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.8635006322323222,
+  "transfer": 0.9255981144821379
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 5,
+  "in_scene": 1.0,
+  "transfer": 0.8610298635775046
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9918586352800344,
+  "transfer": 0.8029917441842112
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9946845654910781,
+  "transfer": 0.7906474763234366
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9938870060811229,
+  "transfer": 0.8265789970857278
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9926847517230475,
+  "transfer": 0.5997263706660728
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9267360741101002,
+  "transfer": 0.774074282071563
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9661904597381887,
+  "transfer": 0.9401252269371249
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "distance to meadow"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9144658981822155,
+  "transfer": 0.46367329738441926
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "distance to lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 1.0,
+  "transfer": 0.920289716359755
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain",
+   "Average Distance to All Objects"
+  ],
+  "n_features": 7,
+  "in_scene": 0.40437267657829,
+  "transfer": 0.9187938625862487
+ },
+ {
+  "domain": "lava",
+  "scenario": "Mask+Gen",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9661904597381887,
+  "transfer": 0.9401252269371249
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9942799901938016,
+  "transfer": 0.7243107231747973
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Average Distance to Dangerous Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9972586344234343,
+  "transfer": 0.8206177192941753
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 6,
+  "in_scene": 0.9942799901938016,
+  "transfer": 0.9837662260112219
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 0,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.976515755365069,
+  "transfer": 0.9422023791173074
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9896608945465432,
+  "transfer": 0.3919671431065504
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9937039572862743,
+  "transfer": 0.9662285594822029
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 1,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "FLEX",
+  "features": [
+   "distance to goal"
+  ],
+  "n_features": 1,
+  "in_scene": 0.33208576061482575,
+  "transfer": 0.5285571757779318
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.8635006322323222,
+  "transfer": 0.9255981144821379
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava"
+  ],
+  "n_features": 2,
+  "in_scene": 0.8635006322323222,
+  "transfer": 0.9019709247940724
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain"
+  ],
+  "n_features": 5,
+  "in_scene": 1.0,
+  "transfer": 0.8610298635775046
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 2,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 1.0
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9918586352800344,
+  "transfer": 0.8029917441842112
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Average distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9945721578986787,
+  "transfer": 0.8430738540430919
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9945721578986787,
+  "transfer": 0.8430738540430919
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Manhattan Distance to Goal",
+   "Manhattan Distance to Lava",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain"
+  ],
+  "n_features": 8,
+  "in_scene": 0.9912108377141488,
+  "transfer": 0.6703155067771872
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 3,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "Average distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9918586352800344,
+  "transfer": 0.8029917441842112
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "FLEX",
+  "features": [
+   "distance to goal",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 2,
+  "in_scene": 0.9772190743858717,
+  "transfer": 0.8167402993472815
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "ALGAE",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to lava"
+  ],
+  "n_features": 3,
+  "in_scene": 0.9144658981822155,
+  "transfer": 0.46367329738441926
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "MFE",
+  "features": [
+   "distance to goal",
+   "Distance to Lava"
+  ],
+  "n_features": 2,
+  "in_scene": 1.0,
+  "transfer": 0.5372735620569089
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "USF",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "Distance to Lava",
+   "Distance to Swamp",
+   "Proximity to Dangerous Terrain",
+   "Proximity to Safe Terrain",
+   "Average Distance to All Objects"
+  ],
+  "n_features": 7,
+  "in_scene": 0.40437267657829,
+  "transfer": 0.9019709247940724
+ },
+ {
+  "domain": "lava",
+  "scenario": "All three",
+  "seed": 4,
+  "method": "FLEX+V",
+  "features": [
+   "distance to goal",
+   "distance to meadow",
+   "distance to dangerous terrain"
+  ],
+  "n_features": 3,
+  "in_scene": 0.40437267657829,
+  "transfer": 0.9019709247940724
+ }
+]
