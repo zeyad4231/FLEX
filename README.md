@@ -122,27 +122,27 @@ Without `FLEX_MODEL`, the code defaults to `gpt-4o-mini` (cheap, for debugging).
 
 ## Reproducing the results
 
-Quick self-tests first (each file has a small demo at the bottom):
+Run all commands from the main project folder. Quick self-tests first (each file has a small demo at the bottom):
 
 ```bash
-python llm.py         # one LLM call, then the same call again from the cache
-python gridworld.py   # builds the 9×9 world and its 12,870 paths
-python irl.py         # checkpoint: correct features give normalized reward ≈ 1 (no API calls)
-python flex.py        # one FLEX update on the paper's "All three" scenario
+python src/llm.py         # one LLM call, then the same call again from the cache
+python src/gridworld.py   # builds the 9×9 world and its 12,870 paths
+python src/irl.py         # checkpoint: correct features give normalized reward ≈ 1 (no API calls)
+python src/flex.py        # one FLEX update on the paper's "All three" scenario
 ```
 
 Then the experiments:
 
 | Result | Command | Output in `results/` | Approx. time |
 |---|---|---|---|
-| RQ1, paper's four methods | `python rq1.py` | `rq1.json`, `rq1_table.md` | 40 min |
-| RQ1, FLEX + checks | `python rq1.py --methods FLEX+V --out results/rq1_flexV2` | `rq1_flexV2.json` | 5 min |
-| Diagnosis of the over-masking | `python diagnose_rq1.py` | printed | < 1 min |
-| RQ2, paper's four methods | `python rq2_grid.py` | `rq2_grid.json`, `rq2_grid.png` | 25 min |
-| RQ2, FLEX + checks | `python rq2_grid.py --methods FLEX+V --out results/rq2_flexV` | `rq2_flexV.json` | 5 min |
-| Transfer to new scenes | `python rq1_transfer.py` | `rq1_transfer.json`, `rq1_transfer_table.md` | 20 min |
-| Change 3: feature memory | `python improvement1_memory.py --out results/improvement1_memory_v3` | `improvement1_memory_v3.json` | 2 min |
-| Change 2: language → θ | `python improvement2_theta.py --out results/improvement2_theta_v2` | `improvement2_theta_v2.json` | 3 min |
+| RQ1, paper's four methods | `python src/rq1.py` | `rq1.json`, `rq1_table.md` | 40 min |
+| RQ1, FLEX + checks | `python src/rq1.py --methods FLEX+V --out results/rq1_flexV2` | `rq1_flexV2.json` | 5 min |
+| Diagnosis of the over-masking | `python src/diagnose_rq1.py` | printed | < 1 min |
+| RQ2, paper's four methods | `python src/rq2_grid.py` | `rq2_grid.json`, `rq2_grid.png` | 25 min |
+| RQ2, FLEX + checks | `python src/rq2_grid.py --methods FLEX+V --out results/rq2_flexV` | `rq2_flexV.json` | 5 min |
+| Transfer to new scenes | `python src/rq1_transfer.py` | `rq1_transfer.json`, `rq1_transfer_table.md` | 20 min |
+| Change 3: feature memory | `python src/improvement1_memory.py --out results/improvement1_memory_v3` | `improvement1_memory_v3.json` | 2 min |
+| Change 2: language → θ | `python src/improvement2_theta.py --out results/improvement2_theta_v2` | `improvement2_theta_v2.json` | 3 min |
 
 Times are with cached answers on a laptop CPU; most time goes into evaluating features on all 12,870 paths. Useful flags for `rq1.py` and `rq2_grid.py`: `--methods`, `--seeds`, `--domains`, `--scenarios`, `--out`.
 
@@ -152,7 +152,18 @@ Times are with cached answers on a laptop CPU; most time goes into evaluating fe
 
 ## Project structure
 
-| File | What it does |
+```
+FLEX/
+├── src/                      all code (run scripts from the main folder: python src/<script>.py)
+├── results/                  JSON results, tables and plots from every experiment
+├── cache/                    every GPT answer (makes re-runs free and identical)
+├── docs/                     report PDF and figures
+├── DEVIATIONS.md             all choices the paper leaves open, observations, changes
+├── README.md
+└── requirements.txt
+```
+
+| File in `src/` | What it does |
 |---|---|
 | `llm.py` | Every GPT call: caching, retries, token and cost tracking |
 | `gridworld.py` | 9×9 KitchenWorld / LavaLand, object properties, all 12,870 corner-to-corner paths |
@@ -167,7 +178,6 @@ Times are with cached answers on a laptop CPU; most time goes into evaluating fe
 | `improvement1_memory.py` | Change 3: returning-preference experiment |
 | `improvement2_theta.py` | Change 2: "how much" experiment and false-positive check |
 | `diagnose_rq1.py` | Finds the over-masking runs and checks every cached MASK answer |
-| `DEVIATIONS.md` | All choices the paper leaves open, observations, and the changes |
 
 ---
 

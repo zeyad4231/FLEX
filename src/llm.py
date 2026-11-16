@@ -13,7 +13,7 @@ load_dotenv()
 # Default model for debugging. Final runs: set FLEX_MODEL=gpt-4o in .env
 MODEL = os.getenv("FLEX_MODEL", "gpt-4o-mini")
 
-CACHE_DIR = Path(__file__).parent / "cache"
+CACHE_DIR = Path(__file__).resolve().parent.parent / "cache"  # cache/ lives in the main folder
 CACHE_DIR.mkdir(exist_ok=True)
 
 # USD per 1M tokens (input, output). Check against OpenAI's pricing page.
