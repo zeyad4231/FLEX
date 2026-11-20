@@ -62,6 +62,7 @@ def capture(seed, method):
                                         st["correction"], verifier=verifier)
         if not any("goal" in n.lower() for n in names(features)):   # same rule as rq2_grid.py
             features = [hand_feature("distance to goal", "goal", np.inf)] + features
+            log = list(log) + [("RULE", "goal restored")]
         history.append(st["correction"])
 
         Phi = np.stack([R.feature_column(f, env, trajs) for f in features], axis=1)
@@ -94,6 +95,8 @@ def summarize(log):
             lines.append(("MASK", "removed " + short(msg.lstrip("- ").strip()), BAD))
         elif step == "ADD":
             lines.append(("ADD", "+ " + short(msg.lstrip("+ ").strip()), INK))
+        elif step == "RULE":
+            lines.append(("RULE", "'goal' restored (task feature)", MUTED))
         elif step == "GENERALIZE":
             lines.append(("GENERALIZE", " → ".join(short(x.strip()) for x in msg.split("->")), INK))
     return lines or [("", "no change", MUTED)]
@@ -242,15 +245,19 @@ def video_mask(runs, path_out, preview=False):
     f, v = runs["FLEX"][k], runs["FLEX+V"][k]
     lr = next(m.split("LR=")[-1].rstrip(")") for s, m in v["log"] if s == "MASK-CHECK")
     steps = [
-        ("Before the correction", "Φ = [ " + ",  ".join(f["before"]) + " ]", "The fridge preference was generalized to 'appliance' at stage 1.", INK, None),
-        ("1. ADD", "+ distance to stove", "The LLM adds a feature for the object in the correction.", INK, None),
-        ("2. GENERALIZE", "distance to stove → distance to heat source",
-         "The LLM generalizes it to the property behind the correction: heat.", INK, None),
+        ("Before the correction", "Φ = [ " + ",  ".join(f["before"]) + " ]",
+         "At stage 1, 'Go near the fridge' was generalized to 'distance to appliance'.", INK, None),
+        ("1. ADD", "no new feature", "ADD finds no missing feature for this correction.", INK, None),
+        ("2. GENERALIZE", "distance to appliance → distance to heat source",
+         "GENERALIZE rewrites the feature around the property behind the correction: heat.", INK, None),
         ("3. MASK (FLEX)", "− distance to heat source",
-         "The MASK prompt does not see the generalization intent, so it judges\n'heat source' unrelated to the stove and deletes the feature it just created.", BAD, "FLEX"),
+         "The MASK prompt does not see the generalization intent, so it judges\n'heat source' irrelevant and deletes the feature GENERALIZE just created.", BAD, "FLEX"),
         ("3. MASK (FLEX+V)", f"refused: removing it makes the demos much less likely (LR = {lr} ≥ 3.84)",
          "Before deleting, FLEX+V refits θ with and without the feature.\nThe user's demos clearly avoid the stove, so the feature stays.", GOOD, "FLEX+V"),
     ]
+    ops = [(st, m) for st, m in f["log"] if not m.startswith("intent")]
+    assert ops == [("ADD", "no new feature"), ("GENERALIZE", "distance to appliance -> distance to heat source"),
+                   ("MASK", "- distance to heat source")], f"stage-2 log changed: {ops}"
     T = len(f["path"])
     per, move = int(4.5 * FPS), int(2.5 * FPS)
     intro, outro = int(4 * FPS), int(5 * FPS)

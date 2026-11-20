@@ -3,7 +3,8 @@
 A from-scratch reimplementation of **FLEX** ([Lee, Dennler, Sucholutsky & Bobu, arXiv:2610.28893](https://arxiv.org/abs/2610.28893)), a diagnosis of why a faithful reimplementation falls short of the paper's Table 1, and three changes that address the method's limitations.
 
 📄 **Report (5 pages):** [`docs/FLEX_reproduction_report.pdf`](docs/FLEX_reproduction_report.pdf)
-📝 **Every implementation choice and observation:** [`DEVIATIONS.md`](DEVIATIONS.md)
+📝 **Every implementation choice and observation:** [`DEVIATIONS.md`](DEVIATIONS.md)  
+🎬 **Demo videos:** [below](#demo-videos)
 
 > The official repository ([MIT-CLEAR-Lab/FLEX](https://github.com/MIT-CLEAR-Lab/FLEX)) contained no code when this work was done (12 Nov 2026), so everything here is built from the paper and its appendix prompts.
 
@@ -19,6 +20,19 @@ A from-scratch reimplementation of **FLEX** ([Lee, Dennler, Sucholutsky & Bobu, 
 | **Transfer to new scenes** | FLEX + check **0.92** with 2.0 features vs. USF **0.78** with 7.0 features, supporting the paper's "compact, transferable" claim |
 | **Change 2: language → θ** | "Stay further / you can get closer" corrections: **0.84 → 0.99** |
 | **Change 3: feature memory** | Returning preference: **+3 points** with one demonstration, **−11 %** LLM calls |
+
+---
+
+## Demo videos
+
+Click a picture to open the video. Videos 1 and 2 replay the RQ2 run from the report (seed 0) using the cached GPT-4o answers, so they show the real decisions of the model, not a mock-up.
+
+| 1. Five corrections in a row (45 s) | 2. Why FLEX loses the feature (31 s) | 3. The code running (56 s) |
+|:---:|:---:|:---:|
+| [<img src="docs/videos/rq2_sequence.png" width="280">](docs/videos/rq2_sequence.mp4) | [<img src="docs/videos/mask_failure.png" width="280">](docs/videos/mask_failure.mp4) | [<img src="docs/videos/code_run.png" width="280">](docs/videos/code_run.mp4) |
+| FLEX vs. FLEX+V side by side: the robot's path after each correction, the operations that ran and the normalized reward. | One correction step by step: ADD → GENERALIZE → MASK. FLEX deletes the heat-source feature; FLEX+V's demo check keeps it (LR = 39.3). | `python src/rq2_grid.py --methods FLEX --seeds 0` in VS Code: same numbers as video 1, 0 API calls, $0. |
+
+Regenerate videos 1 and 2 with `python src/make_videos.py` (about 3 min, no API key needed; uses `ffmpeg`).
 
 ---
 
@@ -143,8 +157,11 @@ Then the experiments:
 | Transfer to new scenes | `python src/rq1_transfer.py` | `rq1_transfer.json`, `rq1_transfer_table.md` | 20 min |
 | Change 3: feature memory | `python src/improvement1_memory.py --out results/improvement1_memory_v3` | `improvement1_memory_v3.json` | 2 min |
 | Change 2: language → θ | `python src/improvement2_theta.py --out results/improvement2_theta_v2` | `improvement2_theta_v2.json` | 3 min |
+| Demo videos 1 and 2 | `python src/make_videos.py` | `docs/videos/*.mp4` | 3 min |
 
 Times are with cached answers on a laptop CPU; most time goes into evaluating features on all 12,870 paths. Useful flags for `rq1.py` and `rq2_grid.py`: `--methods`, `--seeds`, `--domains`, `--scenarios`, `--out`.
+
+> For a quick test run, add `--out results/test`: without it, `rq1.py` and `rq2_grid.py` overwrite the full results in `results/`.
 
 > `results/rq1_flexV.json` was produced by an earlier commit where only MASK was checked (row "FLEX + MASK check" above). The current code also checks GENERALIZE (row "+ GENERALIZE check").
 
@@ -158,6 +175,7 @@ FLEX/
 ├── results/                  JSON results, tables and plots from every experiment
 ├── cache/                    every GPT answer (makes re-runs free and identical)
 ├── docs/                     report PDF and figures
+│   └── videos/               the three demo videos
 ├── DEVIATIONS.md             all choices the paper leaves open, observations, changes
 ├── README.md
 └── requirements.txt
@@ -178,6 +196,7 @@ FLEX/
 | `improvement1_memory.py` | Change 3: returning-preference experiment |
 | `improvement2_theta.py` | Change 2: "how much" experiment and false-positive check |
 | `diagnose_rq1.py` | Finds the over-masking runs and checks every cached MASK answer |
+| `make_videos.py` | Demo videos 1 and 2, replayed from the cache |
 
 ---
 
